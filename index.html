@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/logotipos/la tierra dividida.png">
+    <title>La Tierra Dividida | Inicio</title>
+</head>
+
+<body>
+
+    <div class="barra-podcast">
+        <span class="texto-podcast">
+            Un podcast realizado por Mauro Tomasini y Sergio Requel
+        </span>
+    </div>
+
+    <header class="encabezado-principal">
+        <div class="contenedor-logotipo">
+            <a href="index.html"><img src="img/logotipos/la tierra dividida.png" alt="Logotipo del sitio" class="logotipo"></a>
+        </div>
+    </header>
+
+    <main class="zona-resenas">
+
+        <h2 class="titulo-seccion">Reseñas Disponibles</h2>
+
+        <section class="fila-resenas">
+
+            <div class="tarjeta-resena-libro">
+                <img src="img/portadas/todos los perros son azules.jpg" alt="Portada del libro" class="imagen-libro">
+                <div class="contenido-resena">
+                    <h2 class="titulo-libro">TODOS LOS PERROS SON AZULES</h2>
+                    <h3 class="autor-libro">RODRIGO DE SOUZA LEÃO</h3>
+                    <p class="fragmento-resena">"La vida sin obsesiones"</p>
+
+                    <p class="texto-resena oculto">
+                        Con un tono autobiográfico el autor de “Todos los perros son azules” nos sumerge en las
+                        crueldades del encierro físico, mediante una voz desgarrada, delirante, veloz, que sin llegar a
+                        ser una denuncia social del sistema deja entrever algunos aspectos de la concepción sobre la
+                        enfermedad mental. El hospital psiquiátrico, con su comida pobre, pasillos impersonales y seres
+                        extraviados, será el espacio físico de su declive personal y donde afloran, indefectiblemente,
+                        fantasmas de un presente estático y disminuido.
+                    </p>
+
+                    <button class="boton-desplegar">Ver más</button>
+
+                    <a href="reseñas/todos-los-perros-son-azules.html" class="boton-ver-completa">Ver reseña
+                        completa</a>
+
+                    <p class="autor-resena">Reseña escrita por <a href="https://www.instagram.com/sergio_requel/"
+                            class="autor-resena" target="_blank"><strong>Sergio Requel</strong></a></p>
+                    <p class="fecha-resena">Publicado el 22 de mayo de 2025</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p class="titulo-redes">Visita nuestras redes sociales</p>
+        <div class="iconos-redes">
+            <a href="https://instagram.com" target="_blank" class="icono-circular">
+                <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://spotify.com" target="_blank" class="icono-circular">
+                <i class="ri-spotify-line"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.boton-desplegar').forEach(boton => {
+            boton.addEventListener('click', () => {
+                const texto = boton.previousElementSibling;
+                texto.classList.toggle('mostrar');
+                boton.textContent = texto.classList.contains('mostrar')
+                    ? 'Ver menos'
+                    : 'Ver más';
+            });
+        });
+    </script>
+</body>
+
+</html>
