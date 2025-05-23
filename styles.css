@@ -140,7 +140,8 @@ body {
 }
 
 .fragmento-resena {
-  font-style: italic;
+  font-style: normal;
+  font-weight: bold;
   margin-bottom: 15px;
   font-size: 0.95rem;
   color: white;
@@ -363,11 +364,9 @@ body {
 
 .contenido-resena-completa p {
   text-align: justify;
-  margin-bottom: 20px;
 }
 
 .cita-final {
-  font-weight: bold;
   font-size: 1rem;
   color: #f3e5b4;
   text-align: center;
@@ -525,6 +524,10 @@ body {
   }
 }
 
+.resena-larga br {
+  line-height: 1.2;
+  margin-bottom: 8px; 
+}
 
 
 .comentarios-seccion {
