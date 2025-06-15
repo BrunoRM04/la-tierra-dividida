@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../img/logotipos/la tierra dividida.png">
+    <title>La Tierra Dividida | La Sociedad Excluyente</title>
+</head>
+
+<body>
+
+    <div class="barra-podcast">
+        <span class="texto-podcast">
+            Un espacio de lectura de Mauro Tomasino y Sergio Requel
+        </span>
+    </div>
+
+    <header class="encabezado-principal">
+        <div class="contenedor-logotipo">
+            <a href="../index.html"><img src="../img/logotipos/la tierra dividida.png" alt="Logotipo del sitio"
+                    class="logotipo"></a>
+        </div>
+    </header>
+
+    <main class="zona-detalle-resena">
+
+        <section class="encabezado-resena">
+            <h1 class="titulo-detalle">LA SOCIEDAD EXCLUYENTE</h1>
+            <h2 class="autor-detalle">Jack Young</h2>
+        </section>
+
+        <section class="acciones-resena">
+            <button class="boton-accion" id="boton-me-gusta">
+                <i class="ri-heart-line"></i> Me gusta (<span id="contador-me-gusta">0</span>)
+            </button>
+            <button class="boton-accion" id="abrir-modal-compartir">
+                <i class="ri-share-line"></i> Compartir
+            </button>
+
+            <div class="modal-compartir oculto" id="modal-compartir">
+                <div class="contenido-modal-compartir">
+                    <span id="cerrar-modal-compartir" class="cerrar-modal">&times;</span>
+                    <p class="titulo-modal">Compartir esta reseña</p>
+                    <div class="iconos-compartir">
+                        <a href="#" target="_blank" id="compartir-whatsapp" class="icono-red">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                        <a href="#" target="_blank" id="compartir-facebook" class="icono-red">
+                            <i class="ri-facebook-box-line"></i>
+                        </a>
+                        <button class="icono-red" id="copiar-enlace">
+                            <i class="ri-links-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenido-resena-completa">
+            <p class="subtitulo-resena">El delito, una forma torpe de decir algo</p>
+            <br>
+            <p>
+                En “La sociedad excluyente…” el sociólogo inglés aborda el tema del delito en la modernidad tardía.
+                Introduce en escena las modificaciones que ocurrieron en el Estado de Bienestar, y las consecuencias que
+                las mismas reflejaron en la reconfiguración del trabajo y educación como ejes estructurantes de los
+                procesos de socialización e integración. “Nos sentimos materialmente inseguros y ontológicamente
+                precarios”. En este sentido afirma que el fenómeno de privación relativa se encuentra fuertemente
+                relacionado con los procesos de desviación. Porque por un lado excluye la participación del trabajador
+                del mercado, pero lo anima a la voracidad como consumidor; y por otro, lo incluye, pero solamente de una
+                forma precaria. Es decir, desde una exclusión atormentadora a una inclusión precaria. Ambas
+                frustraciones son articuladas en forma de privación relativa.
+            </p>
+            <br>
+            <p>
+                Young se centra en analizar como el consumo, la desigualdad de oportunidades y la satisfacción de
+                necesidades materiales y simbólicas se conectan para incidir en las conductas desviadas. Así plantea que
+                el “problema” es el delito no los delincuentes.
+                <br>
+                <br>
+                La ucraniana que adoptó como nación al Brasil, escribió esta obra, sentada en la cama con la máquina de
+                escribir arriba de sus piernas, rodeada de niños gritando, con su delantal puesto, fumando
+                compulsivamente.
+                <br>
+                <br>
+                La precariedad constituye uno de los elementos principales del descontento social que se trasluce en
+                violencia social contra grupos vulnerables. Desde esa condición la sociedad encuentra tierra fértil para
+                el moralismo que ella mismo redirecciona en culpa social, demonizando a madres solteras, consumidores de
+                sustancias pisocoactivas, delincuentes, jóvenes de clases subalternas, negros, etc.
+                <br>
+                <br>
+                En este contexto la exclusión social y la criminalidad se han transformado en dos partes de un mismo
+                proceso de “desciudanización, como clientes sociales en tanto consumen política social de sobrevivencia
+                y los residuos económicos y sociales que el mercado le asigna, y también como clientes del sistema
+                penal, en tanto consumidor final de la industria de la seguridad.”
+            </p>
+
+            <p class="cita-final">
+                <strong>Jack Young, La sociedad excluyente. Exclusión social, delito y diferencia en la Modernidad
+                    tardía.</strong>, Marcial Pons, Barcelona, 2010, 170 pág.
+            </p>
+
+            <p class="datos-resena">
+                Reseña escrita por <a href="https://www.instagram.com/tomasini_ph/" target="_blank"><strong>Mauro
+                        Tomasini</strong></a><br>
+                Publicado el 15 de junio de 2025
+            </p>
+        </section>
+
+        <section class="comentarios-seccion">
+            <h3 class="comentarios-titulo">Comentarios</h3>
+
+            <form id="formulario-comentario" class="comentarios-formulario">
+                <label for="nombre-comentario">Nombre</label>
+                <input type="text" id="nombre-comentario" required>
+
+                <label for="mensaje-comentario">Comentario</label>
+                <textarea id="mensaje-comentario" rows="4" required></textarea>
+
+                <button type="submit">Publicar</button>
+            </form>
+
+            <div id="lista-comentarios" class="comentarios-lista"></div>
+        </section>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p class="titulo-redes">Visita nuestras redes sociales</p>
+        <div class="iconos-redes">
+            <a href="https://www.instagram.com/divididalatierra/?hl=en" target="_blank" class="icono-circular">
+                <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://open.spotify.com/show/7dwCdWLFKsf4V91qTHsAdZ?si=eb28d199ae854e0b" target="_blank"
+                class="icono-circular">
+                <i class="ri-spotify-line"></i>
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCarcJJ0qwALepQg4X4fDhJMindod5Otds",
+            authDomain: "latierradividida-1fc04.firebaseapp.com",
+            projectId: "latierradividida-1fc04",
+            storageBucket: "latierradividida-1fc04.appspot.com",
+            messagingSenderId: "376435232740",
+            appId: "1:376435232740:web:ccf2b9d9ed61bb46fa01f1"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+
+        const abrirModal = document.getElementById('abrir-modal-compartir');
+        const modal = document.getElementById('modal-compartir');
+        const cerrarModal = document.getElementById('cerrar-modal-compartir');
+        const compartirWhatsapp = document.getElementById('compartir-whatsapp');
+        const compartirFacebook = document.getElementById('compartir-facebook');
+        const copiarEnlace = document.getElementById('copiar-enlace');
+
+        const reseñaID = "resena_la_sociedad_excluyente";
+
+        // Registrar visita
+        const visitasRef = db.collection("visitas").doc(reseñaID);
+        db.runTransaction(async (transaction) => {
+            const doc = await transaction.get(visitasRef);
+            const visitasActuales = doc.exists ? doc.data().contador || 0 : 0;
+            transaction.set(visitasRef, { contador: visitasActuales + 1 });
+        }).catch((error) => {
+            console.error("Error al registrar la visita:", error);
+        });
+
+        // Compartir enlaces
+        const url = encodeURIComponent(window.location.href);
+        const texto = encodeURIComponent('Leé esta reseña: "La sociedad excluyente"');
+        compartirWhatsapp.href = `https://api.whatsapp.com/send?text=${texto}%20${url}`;
+        compartirFacebook.href = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+
+        abrirModal.addEventListener('click', () => {
+            modal.classList.remove('oculto');
+        });
+
+        cerrarModal.addEventListener('click', () => {
+            modal.classList.add('oculto');
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.add('oculto');
+            }
+        });
+
+        copiarEnlace.addEventListener('click', () => {
+            navigator.clipboard.writeText(window.location.href)
+                .then(() => {
+                    copiarEnlace.innerHTML = '<i class="ri-check-line"></i>';
+                    setTimeout(() => {
+                        copiarEnlace.innerHTML = '<i class="ri-links-line"></i>';
+                    }, 2000);
+                })
+                .catch(() => {
+                    alert('No se pudo copiar el enlace.');
+                });
+        });
+
+        // Likes
+        const botonMeGusta = document.getElementById("boton-me-gusta");
+        const contadorMeGusta = document.getElementById("contador-me-gusta");
+
+        db.collection("likes").doc(reseñaID).get().then(doc => {
+            if (doc.exists) {
+                contadorMeGusta.textContent = doc.data().cantidad || 0;
+            } else {
+                contadorMeGusta.textContent = 0;
+            }
+        });
+
+        botonMeGusta.addEventListener("click", () => {
+            const docRef = db.collection("likes").doc(reseñaID);
+            db.runTransaction(async (transaction) => {
+                const doc = await transaction.get(docRef);
+                const cantidadActual = doc.exists ? doc.data().cantidad || 0 : 0;
+                transaction.set(docRef, { cantidad: cantidadActual + 1 });
+            }).then(() => {
+                contadorMeGusta.textContent = parseInt(contadorMeGusta.textContent) + 1;
+            }).catch((error) => {
+                console.error("Error al actualizar los likes: ", error);
+            });
+        });
+
+        // Comentarios
+        const form = document.getElementById("formulario-comentario");
+        const nombre = document.getElementById("nombre-comentario");
+        const mensaje = document.getElementById("mensaje-comentario");
+        const lista = document.getElementById("lista-comentarios");
+
+        const comentariosRef = db.collection("comentarios_reseñas").doc(reseñaID).collection("lista");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            if (nombre.value.trim() && mensaje.value.trim()) {
+                await comentariosRef.add({
+                    nombre: nombre.value.trim(),
+                    mensaje: mensaje.value.trim(),
+                    fecha: new Date()
+                });
+
+                nombre.value = "";
+                mensaje.value = "";
+                cargarComentarios();
+            }
+        });
+
+        function cargarComentarios() {
+            lista.innerHTML = "";
+            comentariosRef.orderBy("fecha", "desc").get().then(snapshot => {
+                snapshot.forEach(doc => {
+                    const data = doc.data();
+                    const div = document.createElement("div");
+                    div.className = "comentario";
+                    div.innerHTML = `
+                    <strong>${data.nombre}</strong>
+                    <p>${data.mensaje}</p>
+                `;
+                    lista.appendChild(div);
+                });
+            });
+        }
+
+        cargarComentarios();
+    </script>
+</body>
+
+</html>
